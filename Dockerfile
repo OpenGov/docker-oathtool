@@ -25,4 +25,4 @@ ENTRYPOINT ["/usr/local/bin/oathtool", "--base32", "--totp"]
 
 LABEL com.opengov.maintainer=OpenGov \
       com.opengov.contact=devops@opengov.com \
-      com.opengov.version=1.0.0
+      com.opengov.version=1.0.1
