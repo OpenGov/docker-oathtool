@@ -9,7 +9,7 @@ RUN apt-get update --assume-yes && \
 RUN mkdir /tmp/oathtool && cd /tmp/oathtool && \
     wget http://download.savannah.nongnu.org/releases/oath-toolkit/oath-toolkit-2.6.2.tar.gz && \
     wget http://download.savannah.nongnu.org/releases/oath-toolkit/oath-toolkit-2.6.2.tar.gz.sig && \
-    gpg --keyserver hkp://pgp.mit.edu --recv-key 860B7FBB32F8119D && \
+    gpg --keyserver hkp://keyserver.ubuntu.com --recv-key 860B7FBB32F8119D && \
     gpg --verify oath-toolkit-2.6.2.tar.gz.sig oath-toolkit-2.6.2.tar.gz && \
     tar -x -f oath-toolkit-2.6.2.tar.gz && cd oath-toolkit-2.6.2 && \
     ./configure --disable-shared --disable-pskc --disable-xmltest && \
